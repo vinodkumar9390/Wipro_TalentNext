@@ -1,21 +1,18 @@
 class calculator{
-    private int num1;
-    private int num2;
     static int powerInt(int num1,int num2){
-        int power=(int)Math.pow(num1,num2);
-        return power;
+        int num3=(int)Math.pow(num1 ,num2);
+        return num3;
     }
-    static double poweDouble(double num1,double num2){
-        double power1=(double)Math.pow(num1,num2);
-        return power1;
+    static double powerDouble(double num1,int num2){
+        double num3=(double)Math.pow(num1,num2);
+        return num3;
     }
-        
-    
 }
- class lunch{
+public class launch{
     public static void main(String[] args){
-        calculator s=new calculator();
-        System.out.println(s.powerInt(2,3));
-        System.out.println(s.poweDouble(4.5,5.5));
+       int res= calculator.powerInt(3 ,5);
+       System.out.println(res);
+       double res1= calculator.powerDouble(3.5 ,5);
+       System.out.println(res1);
     }
 }
